@@ -12,6 +12,7 @@ export default antfu(
 		},
 
 		rules: {
+			"no-console": "off",
 			"import/order": "off",
 			"sort-imports": "off",
 			"unicorn/consistent-function-scoping": "off",

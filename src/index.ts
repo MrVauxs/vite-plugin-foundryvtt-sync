@@ -39,5 +39,4 @@ export function CompendiumSync(options: Partial<typeof defaults> = defaults): Pl
 	};
 };
 
-// TODO: Figure out how to import actual code with the plugin
-// https://github.com/MrVauxs/pf2e-graphics/blob/a7941b9239a714a86b6824a226263bd37e3c1e6a/src/lib/devCompendiumSync.ts
+// TODO: Figure out how to import client.ts with the plugin
