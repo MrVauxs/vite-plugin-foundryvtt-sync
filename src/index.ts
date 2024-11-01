@@ -3,10 +3,10 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 const defaults = {
-	path: './packs',
-};
+	path: './packs'
+}
 
-export default function CompendiumSync(options: Partial<typeof defaults> = defaults): Plugin {
+export function CompendiumSync(options: Partial<typeof defaults> = defaults): Plugin {
 	return {
 		name: 'vite-plugin-foundryvtt-sync',
 		configureServer(server) {
@@ -22,7 +22,7 @@ export default function CompendiumSync(options: Partial<typeof defaults> = defau
 
 					client.send(
 						'foundryvtt-sync:response',
-						{ data,
+						{ data
 
 						},
 					);
@@ -37,3 +37,6 @@ export default function CompendiumSync(options: Partial<typeof defaults> = defau
 		},
 	};
 };
+
+// TODO: Figure out how to import actual code with the plugin
+// https://github.com/MrVauxs/pf2e-graphics/blob/a7941b9239a714a86b6824a226263bd37e3c1e6a/src/lib/devCompendiumSync.ts
